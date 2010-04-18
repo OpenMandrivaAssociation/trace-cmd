@@ -14,6 +14,7 @@ Source0: %{name}-%{hash}.tar.gz
 Patch0: remove_locate_use.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: docbook-style-xsl == 1.75.2
+BuildRequires: asciidoc
 
 %description
 trace-cmd is a user interface to Ftrace. Instead of needing to use the
