@@ -1,6 +1,6 @@
 %define name trace-cmd
 %define version 1.0.4
-%define release %mkrel 1
+%define release %mkrel 2
 %define hash 0d25222
 
 Summary: User interface to Ftrace
@@ -26,13 +26,13 @@ tracers and will record into a data file.
 %patch0 -p1
 
 %build
-make
+make DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make prefix=$RPM_BUILD_ROOT/%{_prefix} install
+make DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix} install
 export MANPAGE_DOCBOOK_XSL="/usr/share/sgml/docbook/xsl-stylesheets-1.75.2/manpages/docbook.xsl"
-make prefix=$RPM_BUILD_ROOT/%{_prefix} install_doc
+make DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix} install_doc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
