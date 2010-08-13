@@ -1,7 +1,7 @@
 %define name trace-cmd
-%define version 1.0
+%define version 1.0.4
 %define release %mkrel 1
-%define hash 52cee49
+%define hash 0d25222
 
 Summary: User interface to Ftrace
 Name: %{name}
@@ -44,4 +44,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{name}
 %{_datadir}/%{name}/plugins/*
 %{_mandir}/*/*
-
