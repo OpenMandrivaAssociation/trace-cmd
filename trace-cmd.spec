@@ -9,7 +9,7 @@ Version: %{version}
 Release: %{release}
 License: GPLv2
 Group: Development/Kernel
-URL: http://git.kernel.org/?p=linux/kernel/git/rostedt/trace-cmd.git;a=summary
+URL: https://git.kernel.org/?p=linux/kernel/git/rostedt/trace-cmd.git;a=summary
 Source0: %{name}-%{hash}.tar.gz
 Patch0: remove_locate_use.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
