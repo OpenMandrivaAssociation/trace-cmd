@@ -13,6 +13,7 @@ URL: https://git.kernel.org/?p=linux/kernel/git/rostedt/trace-cmd.git;a=summary
 Source0: %{name}-%{hash}.tar.gz
 Patch0: remove_locate_use.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRequires:	make
 BuildRequires: docbook-style-xsl == 1.75.2
 BuildRequires: asciidoc
 
